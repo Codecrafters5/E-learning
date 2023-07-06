@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+ <script src="jq.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#show").click(function() {
+    $("#sb").fadeIn(10);
+     });
+     $("#h").click(function() {
+     $("#sb").fadeOut(10);
+      });
+  });
+      </script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+   <div id="show" style="cursor:pointer;margin-left:20px;">
+     <ul>
+       <div style="border-bottom:4px steelblue solid;width:27px;"></div>
+       <div style="border-bottom: 4px steelblue solid;width:20px;margin-top: 5px;"></div>
+       <div style="border-bottom:4px steelblue solid;width:27px;margin-top: 5px;"></div>
+     </ul>
+   </div>
+   <br>
+ </header>
+ <br>
+ <div align="center" class="sb" id="sb">
+   <br><br>
+   <h1 id="h" style="cursor:pointer;color: steelblue;left: 12px;position:absolute;font-family:sans-seirf;">x</h1>
+   <br>
+   <ul><br>
+     <br><br>
+     <img src="logo.png" style="width:150px;border-radius: 100%;">
+     <br><br>
+     <h2 style="color:steelblue">E-learning</h2>
+     <br>
+     <a class="hover-underline-animation" href="#">Home</a><br><br>
+     <a class="hover-underline-animation" href="#about">About</a><br><br>
+     <a class="hover-underline-animation" href="#c">Deals</a><br><br>
+     <a class="hover-underline-animation" href="#why">Why</a><br><br>
+     <a class="hover-underline-animation" href="#contact">Contact</a>
+   </ul>
+   <br>
+   <br>
+ </div>
+ <nav class="nav">
+   <h2><span>E</span>-learning</h2>
+   <a class="hover-underline-animation" href="#">Home</a>
+   <a class="hover-underline-animation" href="#about">About</a>
+   <a class="hover-underline-animation" href="#c">Deals of the day</a>
+   <a class="hover-underline-animation" href="#why">Why Choose Us?</a>
+   <a class="hover-underline-animation" href="#contact">Contact</a>
+ </nav>
+ <br><br>
+ <div align="center" class="landing">
+   <ul>
+ <h2>learn Coding Online Now !!</h2>
+ <button>Learn More</button>
+ </ul>
+<img src="school-4080475-3377417.png" width="350px">
+ </div>
+ <br><br><br><br><br><br>
+ <center>
+   <h1 id="about" align="center">About us</h1><br>
+ <div align="center" class="about">
+   <img src="boy-using-mobile-4925978-4104247.png" width="200px">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus repudiandae neque explicabo perferendis. Veritatis officia nesciunt illo, nostrum accusantium!</p>
+ </div>
+ </center>
+ <br><br><br><br>
+ <h1 align="center" id="c">Deals of the day</h1><br><br>
+ <div class="cards">
+   <img src="preview-removebg-preview.png" alt="">
+   <h1>+</h1>
+   <img src="free-css3-4387639-3640300.png" alt="">
+   <h1>+</h1>
+   <img src="javascript-logo-5453022.png" alt="">
+ </div>
+ 
+ <!-- cards 2 -->
+ 
+ <div class="cards">
+   <img src="free-bootstrap-framework-logo-6563486-5453031.png" alt="">
+   <h1>+</h1>
+   <img src="free-react-native-5562339-4642743.png" alt="">
+   <h1>=</h1>
+   <h1><span style="color:red;text-decoration:line-through;font-size:15px;">50$</span> <span style="color:limegreen;font-size: 40px;">25$</span></h1>
+ </div><br><br><br><br>
+ <h1 id="why" align="center">Why choose us?</h1>
+ <!-- why choose us -->
+ 
+ <center>
+ <div align="center" class="why">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa esse quae magni rem placeat quisquam nisi ut dolorum iste, modi.</p>
+   <img src="about.png" width="250px">
+ </div>
+ <br><br><br><br>
+ <h1 id="contact" align="center">Contact us</h1>
+ <div class="form">
+   <img src="contact.png" width="180px">
+   <form action="">
+     <ul>
+  <input type="email" placeholder="  Email"><br>
+  <input type="text" placeholder=" full name"><br>
+  <textarea placeholder=" your massage"></textarea><br>
+  <button>Submit</button>
+     </ul>
+   </form>
+ </div>
+ <footer>
+   <br>
+   <h4 style="color:#fff;">Copyright by <a href="https://codecrafters5.github.io/MW_Portfolio">Mohamed Waleed</a> © in 2023</h4>
+ </footer>
+ </center>
+ <script>
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 20) {
+    document.querySelector(".about").style.display = "flex";
+  }
+})
+ </script>
+</body>
+</html>

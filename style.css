@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  color: #111;
+  font-family: 'Ubuntu', sans-serif;
+  align-items: center;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  transition: 1s;
+  font-weight: 500;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  border-bottom: 2px steelblue solid;
+}
+
+a:hover {
+  color: steelblue;
+  text-decoration: underline steelblue;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: steelblue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+button {
+  width: 80px;
+  height: 25px;
+  background: none;
+  margin-top: 10px;
+  color: #111;
+  border: 2px #111 solid;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  header {
+    display: flex !important;
+  }
+ h1{
+    font-size: 25px;
+  }
+  p{
+    font-size: 12px
+  }
+}
+
+button:hover {
+  color: #fff;
+  background: #111;
+}
+
+.sb {
+  backdrop-filter: blur(50px);
+  display: none;
+  bottom: 0;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999;
+}
+#show {
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+header {
+  border-bottom: 1px steelblue solid;
+  height: 70px;
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  header {
+    display: none;
+  }
+}
+span{
+  color: steelblue;
+}
+.landing {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+.about{
+display: flex;
+align-items: center;
+height: 200px;
+justify-content: space-around;
+width: 370px;
+box-shadow: 1px 1px 3px grey;
+border-radius: 2px;
+padding: 10px;
+animation: an 1.50s ease-in-out;
+display: none;
+}
+@keyframes an{
+  from{
+    opacity: 0;
+    
+  }to{
+    opacity: 1;
+  }
+}
+html{
+  scroll-behavior: smooth;
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 13px;
+
+}
+.cards img{
+  width: 100px;
+}
+.why{
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+input{
+  border: none;
+  height: 25px;
+  width: 200px;
+  margin-top: 7px;
+  border-bottom: 2px steelblue solid;
+}
+textarea{
+  border: 2px steelblue solid;
+  height: 100px;
+  width: 200px;
+  margin-top: 10px;
+}
+footer{
+  height: 100px;
+  background: #111;
+}
+footer a{
+  color: dodgerblue;
+  text-decoration: underline;
+}
+.form{
+  justify-content: space-around;
+  display: flex;
+}
+form button{
+  border-color: steelblue;
+  color: steelblue;
+}
+form button:hover{
+  background: steelblue;
+}
+::placeholder{
+  color: steelblue;
+}
