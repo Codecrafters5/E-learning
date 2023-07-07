@@ -67,7 +67,7 @@ button {
     font-size: 25px;
   }
   p{
-    font-size: 12px
+    font-size: 10px
   }
 }
 
@@ -162,6 +162,7 @@ textarea{
 }
 footer{
   height: 100px;
+  width:100%;
   background: #111;
 }
 footer a{
